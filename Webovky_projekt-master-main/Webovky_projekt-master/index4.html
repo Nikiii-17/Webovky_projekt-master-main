@@ -6,14 +6,82 @@
      <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/bootswatch/dist/cerulean/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootswatch/dist/darkly/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/flag-icons/css/flag-icons.min.css">
-    <title>Document</title>
+    <title>kontaktní formulář</title>
 </head>
 <body>
-    
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="index4.html">BookClub</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Hlavní stránka</a></li>
+               <li class="nav-item"><a class="nav-link" href="index2.html">Seznam knih</a></li>
+                <li class="nav-item"><a class="nav-link" href="index3.html">Karty knih</a></li>
+                <li class="nav-item"><a class="nav-link" href="index1.html">Postup čtení</a></li>
+                <li class="nav-item"><a class="nav-link" href="index4.html">Kontakt</a></li>
+                <li class="nav-item"><a class="nav-link" href="index6.html">Časté otázky</a></li>
+                <li class="nav-item"><a class="nav-link" href="index5.html">Registrace</a></li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#loginForm">Přihlášení</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="collapse bg-light p-3" id="loginForm">
+    <div class="container">
+        <form>
+            <div class="mb-3">
+                <label for="loginUsername" class="form-label">Přihlašovací jméno:</label>
+                <input type="text" class="form-control" id="loginUsername" required>
+            </div>
+            <div class="mb-3">
+                <label for="loginPassword" class="form-label">Heslo:</label>
+                <input type="password" class="form-control" id="loginPassword" required>
+            </div>
+            <button type="submit" class="btn btn-success">Přihlásit se</button>
+        </form>
+    </div>
+</div>
+    <!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kontakt - BookClub Connect</title>
+
+<div class="container mt-5">
+    <h2>Kontakt</h2>
+    <form>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Vaše zpráva:</label>
+            <textarea id="editor"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Odeslat</button>
+    </form>
+</div>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="node_modules/tinymce/tinymce.min.js"></script>
+    <script>
+    tinymce.init({
+        selector: '#editor',
+        menubar: false,
+        plugins: 'link lists',
+        toolbar: 'bold italic | bullist numlist | link'
+    });
+</script>
 </body>
 </html>

@@ -6,12 +6,98 @@
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/bootswatch/dist/cerulean/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootswatch/dist/darkly/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/flag-icons/css/flag-icons.min.css">
-    <title>Document</title>
+    <title>Časté otázky</title>
 </head>
 <body>
-    
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="index6.html">Časté otázky</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Hlavní stránka</a></li>
+                <li class="nav-item"><a class="nav-link" href="index2.html">Seznam knih</a></li>
+                <li class="nav-item"><a class="nav-link" href="index3.html">Karty knih</a></li>
+                <li class="nav-item"><a class="nav-link" href="index1.html">Postup čtení</a></li>
+                <li class="nav-item"><a class="nav-link" href="index4.html">Kontakt</a></li>
+                <li class="nav-item"><a class="nav-link" href="index6.html">Časté otázky</a></li>
+                <li class="nav-item"><a class="nav-link" href="index5.html">Registrace</a></li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#loginForm">Přihlášení</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="collapse bg-light p-3" id="loginForm">
+    <div class="container">
+        <form>
+            <div class="mb-3">
+                <label for="loginUsername" class="form-label">Přihlašovací jméno:</label>
+                <input type="text" class="form-control" id="loginUsername" required>
+            </div>
+            <div class="mb-3">
+                <label for="loginPassword" class="form-label">Heslo:</label>
+                <input type="password" class="form-control" id="loginPassword" required>
+            </div>
+            <button type="submit" class="btn btn-success">Přihlásit se</button>
+        </form>
+    </div>
+</div>
+
+
+    <div class="container mt-4">
+    <h2>Časté otázky</h2>
+    <div class="accordion" id="faqAccordion">
+        
+        <!-- Otázka 1 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                    Jak se mohu registrovat?
+                </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Registrace probíhá na stránce <a href="index5.html">Registrace</a>. Vyplňte formulář a klikněte na "Registrovat".
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                    Jak přidám knihu do seznamu?
+                </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Knihu můžete přidat na stránce **Seznam knih**. Stačí kliknout na tlačítko "Přidat knihu".
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                    Jak kontaktovat organizátory akcí?
+                </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Organizátory můžete kontaktovat přes <a href="index 4.html">kontaktní formulář</a>. Stačí vyplnit e-mail a zprávu.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="node_modules/tinymce/tinymce.min.js"></script>
