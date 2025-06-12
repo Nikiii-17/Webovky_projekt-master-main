@@ -11,7 +11,8 @@
     
     <title>Progres</title>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand" href="index1.html">BookClub</a>
@@ -27,6 +28,8 @@
                 <li class="nav-item"><a class="nav-link" href="index4.html">Kontakt</a></li>
                 <li class="nav-item"><a class="nav-link" href="index6.html">Časté otázky</a></li>
                 <li class="nav-item"><a class="nav-link" href="index5.html">Registrace</a></li>
+                <li class="nav-item"><a class="nav-link" href="index7.html">Premium</a></li>
+
                 <li class="nav-item">
                     <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#loginForm">Přihlášení</button>
                 </li>
@@ -35,52 +38,39 @@
     </div>
 </nav>
 
-
-<div class="collapse bg-light p-3" id="loginForm">
-    <div class="container">
-        <form>
-            <div class="mb-3">
-                <label for="loginUsername" class="form-label">Přihlašovací jméno:</label>
-                <input type="text" class="form-control" id="loginUsername" required>
-            </div>
-            <div class="mb-3">
-                <label for="loginPassword" class="form-label">Heslo:</label>
-                <input type="password" class="form-control" id="loginPassword" required>
-            </div>
-            <button type="submit" class="btn btn-success">Přihlásit se</button>
-        </form>
-    </div>
-</div>
-
-    <div class="container mt-4">
+<div class="container flex-grow-1">
     <h5>Postup 9.6. Boj s Githubem (ofiko ho nenavidim)</h5>
     <div class="progress">
         <div class="progress-bar" style="width:1%;"> </div>
     </div>
-</div>
-<div class="container mt-4">
+
     <h5>Postup 10.6. Jupi zaklad je tu</h5>
     <div class="progress">
         <div class="progress-bar" style="width:40%;"> </div>
     </div>
-</div>
-<div class="container mt-4">
+
     <h5>Postup 11.6. Brain storming nad tím co mám upravit</h5>
     <div class="progress">
         <div class="progress-bar" style="width:58%;"> </div>
     </div>
-</div>
-<div class="container mt-4">
+
     <h5>Postup 12.6. dodelavky </h5>
     <div class="progress">
         <div class="progress-bar" style="width:99%;"> </div>
     </div>
+     <h5>Postup 13.6. Odevzdat </h5>
+    <div class="progress">
+        <div class="progress-bar" style="width:100%;"> </div>
+    </div>
 </div>
 
-    <p>BookClub - Vytvořeno mou maličkostí :D <a href="---" class="text-light fw-bold" target="_blank">Odkaz na dokumentaci</a></p>
+<footer class="bg-dark text-white text-center py-3 mt-auto">
+    <p>BookClub - Vytvořeno mou maličkostí :D</p>
+    <p><a href="Dokumentace_hajkova.docx" class="text-light fw-bold" target="_blank">Odkaz na dokumentaci</a></p>
+</footer>
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="node_modules/tinymce/tinymce.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="node_modules/tinymce/tinymce.min.js"></script>
 
 </body>
 </html>
