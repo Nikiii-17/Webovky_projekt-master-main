@@ -23,7 +23,7 @@
                 <li class="nav-item"><a class="nav-link" href="index.html">Hlavní stránka</a></li>
                 <li class="nav-item"><a class="nav-link" href="index2.html">Seznam knih</a></li>
                 <li class="nav-item"><a class="nav-link" href="index3.html">Karty knih</a></li>
-                <li class="nav-item"><a class="nav-link" href="index1.html">Postup čtení</a></li>
+                <li class="nav-item"><a class="nav-link" href="index1.html">Postup</a></li>
                 <li class="nav-item"><a class="nav-link" href="index4.html">Kontakt</a></li>
                 <li class="nav-item"><a class="nav-link" href="index6.html">Časté otázky</a></li>
                 <li class="nav-item"><a class="nav-link" href="index5.html">Registrace</a></li>
@@ -52,36 +52,100 @@
     </div>
 </div>
     
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h2 class="text-center">Registrace</h2>
-                        <form action="registrace.php" method="post">
-                            <div class="mb-3">
-                                <label for="username" class="form-label">Uživatelské jméno:</label>
-                                <input type="text" id="username" name="username" class="form-control" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email:</label>
-                                <input type="email" id="email" name="email" class="form-control" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label">Heslo:</label>
-                                <input type="password" id="password" name="password" class="form-control" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="confirm-password" class="form-label">Potvrzení hesla:</label>
-                                <input type="password" id="confirm-password" name="confirm-password" class="form-control" required>
-                            </div>
-                            <button type="submit" class="btn btn-success w-100">Registrovat</button>
-                        </form>
+ 
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="w-50 p-4 bg-light shadow rounded">
+        <h2 class="text-center mb-4">Registrace do BookClubu</h2>
+        <form>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text"><i class="bi bi-person"></i></span>
+                <div class="form-floating flex-grow-1">
+                    <input type="text" class="form-control" id="login" placeholder="Login">
+                    <label for="login">Přihlašovací jméno</label>
+                </div>
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                <div class="form-floating flex-grow-1">
+                    <input type="password" class="form-control" id="password" placeholder="Heslo">
+                    <label for="password">Heslo</label>
+                </div>
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                <div class="form-floating flex-grow-1">
+                    <input type="password" class="form-control" id="confirm-password" placeholder="Potvrzení hesla">
+                    <label for="confirm-password">Potvrzení hesla</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                        <div class="form-floating flex-grow-1">
+                            <input type="text" class="form-control" id="firstname" placeholder="Jméno">
+                            <label for="firstname">Jméno</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                        <div class="form-floating flex-grow-1">
+                            <input type="text" class="form-control" id="lastname" placeholder="Příjmení">
+                            <label for="lastname">Příjmení</label>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                <div class="form-floating flex-grow-1">
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+
+        
+            
+
+
+            <div class="input-group mb-3">
+                <span class="input-group-text"><i class="bi bi-globe"></i></span>
+                <div class="form-floating flex-grow-1">
+                    <select class="form-select" id="country" required>
+                        <option value="" disabled selected>Vyberte stát</option>
+                        <option value="CZ" class="flag-icon flag-icon-cz">Česká republika</option>
+                        <option value="SK" class="flag-icon flag-icon-sk">Slovensko</option>
+                        <option value="DE" class="flag-icon flag-icon-de">Německo</option>
+                        <option value="FR" class="flag-icon flag-icon-fr">Francie</option>
+                        <option value="ES" class="flag-icon flag-icon-es">Španělsko</option>
+                        <option value="IT" class="flag-icon flag-icon-it">Itálie</option>
+                        <option value="PL" class="flag-icon flag-icon-pl">Polsko</option>
+                        <option value="GB" class="flag-icon flag-icon-gb">Spojené království</option>
+                        <option value="US" class="flag-icon flag-icon-us">USA</option>
+                        <option value="CA" class="flag-icon flag-icon-ca">Kanada</option>
+                    </select>
+                    <label for="country">Stát</label>
+                </div>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary w-100">Registrovat</button>
+        </form>
     </div>
+</div>
+
+
+    <p>BookClub - Vytvořeno mou maličkostí :D <a href="---" class="text-light fw-bold" target="_blank">Odkaz na dokumentaci</a></p>
+
+    
 
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
